@@ -1,0 +1,21 @@
+An outbreak of the Zika virus, an infection transmitted mostly by the Aedes species mosquito (Ae. aegypti and Ae. albopictus), has been sweeping across the Americas and the Pacific since mid-2015. Although first isolated in 1947 in Uganda, a lack of previous research has challenged the scientific community to quickly understand its devastating effects as the epidemic continues to spread.
+
+All Countries & Territories with Active Zika Virus Transmission 
+
+The data
+
+This dataset shares publicly available data related to the ongoing Zika epidemic. It is being provided as a resource to the scientific community engaged in the public health response. The data provided here is not official and should be considered provisional and non-exhaustive. The data in reports may change over time, reflecting delays in reporting or changes in classifications. And while accurate representation of the reported data is the objective in the machine readable files shared here, that accuracy is not guaranteed. Before using any of these data, it is advisable to review the original reports and sources, which are provided whenever possible along with further information on the CDC Zika epidemic GitHub repo.
+
+The dataset includes the following fields:
+
+report_date - The report date is the date that the report was published. The date should be specified in standard ISO format (YYYY-MM-DD).
+location - A location is specified for each observation following the specific names specified in the country place name database. This may be any place with a 'location_type' as listed below, e.g. city, state, country, etc. It should be specified at up to three hierarchical levels in the following format: [country]-[state/province]-[county/municipality/city], always beginning with the country name. If the data is for a particular city, e.g. Salvador, it should be specified: Brazil-Bahia-Salvador.
+location_type - A location code is included indicating: city, district, municipality, county, state, province, or country. If there is need for an additional 'location_type', open an Issue to create a new 'location_type'.
+data_field - The data field is a short description of what data is represented in the row and is related to a specific definition defined by the report from which it comes.
+data_field_code - This code is defined in the country data guide. It includes a two letter country code (ISO-3166 alpha-2, list), followed by a 4-digit number corresponding to a specific report type and data type.
+time_period - Optional. If the data pertains to a specific period of time, for example an epidemiological week, that number should be indicated here and the type of time period in the 'time_period_type', otherwise it should be NA.
+time_period_type - Required only if 'time_period' is specified. Types will also be specified in the country data guide. Otherwise should be NA.
+value - The observation indicated for the specific 'report_date', 'location', 'data_field' and when appropriate, 'time_period'.
+unit - The unit of measurement for the 'data_field'. This should conform to the 'data_field' unit options as described in the country-specific data guide.
+If you find the data useful, please support data sharing by referencing this dataset and the original data source. If you're interested in contributing to the Zika project from GitHub, you can read more here. The source for the Zika virus structure is available here.
+Released Under CC0: Public Domain License

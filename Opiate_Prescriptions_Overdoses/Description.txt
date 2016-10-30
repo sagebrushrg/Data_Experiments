@@ -1,0 +1,18 @@
+U.S. Opiate Prescriptions
+
+Accidental death by fatal drug overdose is a rising trend in the United States. What can you do to help?
+
+This dataset contains summaries of prescription records for 250 common opioid and non-opioid drugs written by 25,000 unique licensed medical professionals in 2014 in the United States for citizens covered under Class D Medicare as well as some metadata about the doctors themselves. This is a small subset of data that was sourced from cms.gov. The full dataset contains almost 24 million prescription instances in long format. I have cleaned and compiled this data here in a format with 1 row per prescriber and limited the approximately 1 million total unique prescribers down to 25,000 to keep it manageable. If you are interested in more data, you can get the script I used to assemble the dataset here and run it yourself. The main data is in prescriber-info.csv. There is also opioids.csv that contains the names of all opioid drugs included in the data and overdoses.csv that contains information on opioid related drug overdose fatalities.
+
+The increase in overdose fatalities is a well-known problem, and the search for possible solutions is an ongoing effort. My primary interest in this dataset is detecting sources of significant quantities of opiate prescriptions. However, there is plenty of other studies to perform, and I am interested to see what other Kagglers will come up with, or if they can improve the model I have already built.
+
+The data consists of the following characteristics for each prescriber
+
+NPI – unique National Provider Identifier number
+Gender - (M/F)
+State - U.S. State by abbreviation
+Credentials - set of initials indicative of medical degree
+Specialty - description of type of medicinal practice
+A long list of drugs with numeric values indicating the total number of prescriptions written for the year by that individual
+Opioid.Prescriber - a boolean label indicating whether or not that individual prescribed opiate drugs more than 10 times in the year
+Released Under CC0: Public Domain License
